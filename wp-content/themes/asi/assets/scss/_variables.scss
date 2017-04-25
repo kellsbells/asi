@@ -1,0 +1,53 @@
+//--------------------------------------------------------------
+// Variables
+//--------------------------------------------------------------
+
+// -------------------
+// Typography / Rhythm
+// -------------------
+
+$space: 20px;
+
+
+
+// ------
+// Colors
+// ------
+
+$white: #FFF;
+$black: #000;
+
+
+$color-alpha: #120F82;
+
+
+// -----
+// Fonts
+// -----
+
+
+$font-default: 'Maison Neue', sans-serif;
+
+
+// -----------
+// Breakpoints
+// -----------
+
+$break-small: 480px;
+$break-medium: 720px;
+$break-large: 960px;
+$break-xl: 1800px;
+
+$max-width: 1200px;
+
+
+// ----
+// Grid
+// ----
+
+$susy: (
+    columns: 12,
+    container: $max-width,
+    gutters: 0,
+    output: float
+);
