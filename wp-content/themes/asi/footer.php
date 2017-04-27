@@ -15,11 +15,11 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			<div class="addtl-footer-links uppercase">
+			<!-- <div class="addtl-footer-links uppercase">
 				<a href="/privacy-policy">Privacy Policy</a>
 				<a href="/cookie-policy">Cookie Policy</a>
 				<a href="/terms-of-service">Terms of Service</a>
-			</div>	
+			</div>	 -->
 			<div class="copyright uppercase">
 				<a href="#">Back to Top</a>
 				<p>	&copy; <?php echo date("Y"); ?> ASI</p>

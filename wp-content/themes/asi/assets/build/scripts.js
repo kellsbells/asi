@@ -18,6 +18,7 @@
 			Site.challengeContext();
 			Site.waypoints();
 			Site.rotateWords();
+			Site.smoothScroll();
 			/**
 			 * Check breakpoint context on window resizing
 			 * Throttled/debounced for better performance
@@ -43,16 +44,26 @@
 			Site.context = states[index] || 'desktop';
 		},
 
+		smoothScroll: function() {
+			console.log('in smooth scroll');
+			$('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      	var target = $(this.hash);
+			      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      	if (target.length) {
+			      	  	$('html, body').animate({
+			      	  	  scrollTop: target.offset().top
+			      	  	}, 1000);
+			      	  	return false;
+			      	}
+			    }
+			});
+		},
+
 
 
 		waypoints: function() {
-			//small logo appears when large logo scrolls up 
-			console.log('in waypoints');
-
-			//when in the purple section give pink navigation and sets currentDiv to purple
 			var $inview = $( '.js-inview' );
-
-
 
 			$inview.each(function() {
 		        $(this).waypoint(function() {
@@ -60,8 +71,6 @@
 		        },
 		        { offset: '80%'});
 		    });
-
-
 		},
 
 
@@ -83,30 +92,17 @@
 		rotateWords: function(){
 			$(function () {
 			  	var $anchors = $('.js-rotating-words');
-				
-
 				var counter = 0;
-
 				var timer = setInterval(function () {
-
-					
-
-
 				    if (counter < $anchors.length) {
 				    	$anchors.removeClass('active');
 				        $($anchors[counter]).addClass('active');
 				    }
-
 				    if (counter >= $anchors.length) {
 				        clearInterval(timer);
 				    }
-
 				    counter++;
-
 				}, 1000);
-
-
-
 			});
 		},
 	};

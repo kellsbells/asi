@@ -17,6 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="https://use.fontawesome.com/0ca6671226.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800i|Roboto" rel="stylesheet">
 <!-- <link rel="shortcut icon" href="<?php //echo get_stylesheet_directory_uri(); ?>/favicon.ico" /> -->
 
 <?php 

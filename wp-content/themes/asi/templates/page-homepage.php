@@ -40,11 +40,11 @@ get_header();
 			<div class="about__container">
 				<div class="about__left js-inview appear">
 					<h2>We are ASI</h2>
-					<h3>Youre local resource for alert security.</h3>
+					<h3>Your local resource for alert security.</h3>
 					<p>Protect what you love most. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus auctor cursus. Aliquam sed rhoncus sem. Suspendisse ullamcorper elit magna, in hendrerit lorem egestas semper. Donec justo sapien, imperdiet feugiat hendrerit sit amet, tincidunt vel risus. Pellentesque luctus ornare tincidunt. Aenean egestas ante et sem posuere, quis posuere elit condimentum.</p>
 				</div>
 				<div class="about__right js-inview appear">
-					<img src="<?php echo $imagedir ?>/family.png">
+					<img src="<?php echo $imagedir ?>/1.jpg">
 				</div>
 			</div>	
 		</div>	
@@ -91,7 +91,7 @@ get_header();
 		<div class="container">
 			<div class="products__container">
 				<div class="products__left">
-					<img src="<?php echo $imagedir ?>/keypad.png" class="js-inview slide-right">
+					<img src="<?php echo $imagedir ?>/products/keypad.png" class="js-inview slide-right">
 				</div>
 
 				<div class="products__right js-inview appear">

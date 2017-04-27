@@ -368,39 +368,9 @@ td,
 th {
   padding: 0; }
 
-@font-face {
-  font-family: "Maison Neue Bold";
-  src: url("../fonts/MaisonNeueMG/MaisonNeueWEB-Bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Maison Neue Book";
-  src: url("../fonts/MaisonNeueMG/MaisonNeueWEB-Book.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Maison Neue Demi";
-  src: url("../fonts/MaisonNeueMG/MaisonNeueWEB-Demi.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Maison Neue Light";
-  src: url("../fonts/MaisonNeueMG/MaisonNeueWEB-Light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Maison Neue Medium";
-  src: url("../fonts/MaisonNeueMG/MaisonNeueWEB-Medium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 html {
   box-sizing: border-box;
-  font-family: "Maison Neue", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   line-height: 1; }
@@ -625,7 +595,7 @@ big {
   line-height: 1;
   z-index: 2;
   background-color: #FFF;
-  font-family: "Maison Neue Medium";
+  font-family: "Open Sans", sans-serif;
   padding: 20px 0;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3); }
   .header:before, .header:after {
@@ -742,7 +712,7 @@ big {
   height: 100%; }
 
 .hero {
-  background: url(../img/hero.jpg) no-repeat center center fixed;
+  background: url(../img/5.jpg) no-repeat center center fixed;
   background-size: cover;
   position: relative;
   min-height: 100vh; }
@@ -752,42 +722,69 @@ big {
     position: absolute;
     bottom: 0; }
   .hero__left {
-    width: 60%;
+    width: 100%;
     line-height: 0; }
+    .hero__left img {
+      width: 100%; }
+    @media (min-width: 800px) {
+      .hero__left {
+        width: 800px; } }
   .hero__right {
-    color: #FFF; }
+    color: #FFF;
+    display: none; }
+    @media (min-width: 800px) {
+      .hero__right {
+        display: block; } }
   .hero .js-rotating-words {
     display: none; }
     .hero .js-rotating-words.active {
       display: block; }
 
 .about {
-  padding: 100px 0; }
+  padding: 40px 0; }
+  @media (min-width: 800px) {
+    .about {
+      padding: 100px 0; } }
   .about__container {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
   .about h2 {
     font-size: 60px;
     line-height: 1.2;
-    margin: 0; }
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: italic; }
   .about h3 {
     font-size: 30px;
     margin: 0; }
   .about__left {
-    width: 50%;
-    padding-right: 20px; }
+    width: 100%;
+    padding: 10px 0; }
+    @media (min-width: 800px) {
+      .about__left {
+        width: 50%;
+        padding-right: 20px; } }
   .about__right {
-    width: 50%;
-    padding-left: 20px; }
+    width: 100%;
+    padding: 10px 0; }
+    @media (min-width: 800px) {
+      .about__right {
+        width: 50%;
+        padding-left: 20px; } }
     .about__right img {
       width: 100%; }
 
 .sub-hero {
-  padding: 100px 0;
-  background: url(../img/hero.jpg) no-repeat center center fixed;
+  padding: 40px 0;
+  background: url(../img/6.jpg) no-repeat center center fixed;
   background-size: cover;
   position: relative;
   color: white; }
+  @media (min-width: 800px) {
+    .sub-hero {
+      padding: 100px 0; } }
   .sub-hero h2 {
     font-size: 40px;
     line-height: 1.2;
@@ -798,28 +795,50 @@ big {
     font-size: 60px; }
   .sub-hero__columns {
     display: flex;
-    align-items: stretch; }
+    align-items: stretch;
+    flex-wrap: wrap; }
   .sub-hero__column {
-    width: 33.33%; }
+    width: 100%; }
+    @media (min-width: 800px) {
+      .sub-hero__column {
+        width: 33.33%;
+        padding: 10px 0; } }
 
 .products {
-  padding: 100px 0; }
+  padding: 40px 0; }
+  @media (min-width: 800px) {
+    .products {
+      padding: 100px 0; } }
   .products__container {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
   .products__left {
-    width: 50%;
-    padding-right: 20px; }
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 800px) {
+      .products__left {
+        width: 50%;
+        padding-right: 20px;
+        text-align: left; } }
   .products__right {
-    width: 50%;
-    padding-left: 20px; }
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 800px) {
+      .products__right {
+        width: 50%;
+        padding-right: 20px;
+        text-align: right; } }
 
 .contact {
-  padding: 100px 0;
-  background: url(../img/hero.jpg) no-repeat center center fixed;
+  padding: 40px 0;
+  background: url(../img/3.jpg) no-repeat center center fixed;
   background-size: cover;
   position: relative;
   color: white; }
+  @media (min-width: 800px) {
+    .contact {
+      padding: 100px 0; } }
   .contact input,
   .contact textarea {
     width: 100%;
