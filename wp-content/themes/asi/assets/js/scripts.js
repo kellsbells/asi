@@ -19,6 +19,7 @@
 			Site.waypoints();
 			Site.rotateWords();
 			Site.smoothScroll();
+			Site.mobileNav();
 			/**
 			 * Check breakpoint context on window resizing
 			 * Throttled/debounced for better performance
@@ -45,7 +46,6 @@
 		},
 
 		smoothScroll: function() {
-			console.log('in smooth scroll');
 			$('a[href*="#"]:not([href="#"])').click(function() {
 			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			      	var target = $(this.hash);
@@ -103,6 +103,14 @@
 				    }
 				    counter++;
 				}, 1000);
+			});
+		},
+
+		mobileNav: function(){
+			console.log('in mobile nav');
+			$('.hamburger-helper').on('click', function() {
+				$(this).find('.hamburger').toggleClass('active');
+				$('.dropdown').toggleClass('active');
 			});
 		},
 	};

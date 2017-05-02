@@ -32,7 +32,16 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
-	<header id="header" class="header" role="banner">
+	
+
+	<header id="header" class="header-desktop" role="banner">
+		<div class="utility-nav">
+			<div class="container">
+				<div class="utility-nav__item">
+					<a href="tel:8001231234"><i class="fa fa-phone" aria-hidden="true"></i>800-123-1234</a>
+				</div>
+			</div>
+		</div>
 		<div class="header__container">
 			<a href="/#" class="site-branding nav-item">
 				<img class="desktop-logo" src="<?php echo $imagedir ?>/asi-logo-dark.png"/>
@@ -42,6 +51,38 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 			</nav>
 			<div class="site-action nav-item">
 				<a class="button" href="/#contact">Contact Us</a>
+			</div>
+		</div>
+	</header>
+
+	<header id="header" class="header-mobile" role="banner">
+		<div class="fixed-nav">
+			<a href="/#" class="site-branding nav-item">
+				<img class="desktop-logo" src="<?php echo $imagedir ?>/asi-logo-dark.png"/>
+			</a>
+			<div class="hamburger-helper">
+                <div class="hamburger" id="hamburger-6">
+                  	<span class="line"></span>
+                  	<span class="line"></span>
+                 	<span class="line"></span>
+                </div> 
+            </div>
+		</div>
+		<div class="dropdown">
+			<div class="utility-nav">
+				<div class="container">
+					<div class="utility-nav__item">
+						<a href="tel:8001231234"><i class="fa fa-phone" aria-hidden="true"></i>800-123-1234</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__container">
+				<nav id="site-navigation" class="nav-item" role="navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav>
+				<div class="site-action nav-item">
+					<a class="button" href="/#contact">Contact Us</a>
+				</div>
 			</div>
 		</div>
 	</header>

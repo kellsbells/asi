@@ -34,7 +34,7 @@
 }
 
 .overlay {
-	background-color: rgba(18, 15, 130, 0.7);
+	background-color: rgba(18, 15, 130, 0.85);
     position: absolute;
     top: 0;
     left: 0;
@@ -161,30 +161,31 @@
 	h2 {
 		font-size: 40px;
 		line-height: 1.2;
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 	}
 
 	p {
 		font-size: 16px;
+		margin: 0;
 	}
 
 
 	i {
-		font-size: 60px;
+		font-size: 30px;
+		padding-right: 10px;
 	}
 
-	&__columns {
+	&__icon {
 		display: flex;
 		align-items: stretch;
-		flex-wrap: wrap;
 	}
 
-	&__column {
-		width: 100%;
+	&__line-item {
+		display: block;
+		padding: 10px 0;
 
-		@include breakpoint(800px) {
-			width: 33.33%;
-			padding: 10px 0;
+		i, p {
+			display: inline-block;
 		}
 	}
 }

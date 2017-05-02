@@ -55,32 +55,45 @@ get_header();
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="sub-hero__heading">
-				<h2 class="js-inview appear">Why Alert Security</h2>
+				<h2 class="js-inview appear">Why a Home Security System is a Necessity</h2>
 			</div>
 
 			<div class="sub-hero__columns js-inview appear">
-				<div class="sub-hero__column">
+				<div class="sub-hero__line-item">
 					<div class="sub-hero__icon">
-						<i class="fa fa-thumbs-o-up" aria-hidden="true"></i><h3>Certified Technicians</h3>
-					</div>
-					<div class="sub-hero__text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+						<i class="fa fa-check-square-o" aria-hidden="true"></i><p>Every 13 seconds a break - in occurs in this country.</p>
 					</div>
 				</div>
-				<div class="sub-hero__column">
+				<div class="sub-hero__line-item">
 					<div class="sub-hero__icon">
-						<i class="fa fa-user-circle-o" aria-hidden="true"></i><h3>Local Expertise</h3>
-					</div>
-					<div class="sub-hero__text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+						<i class="fa fa-check-square-o" aria-hidden="true"></i><p>Unprotected homes are 300% more vulnerable.</p>
 					</div>
 				</div>
-				<div class="sub-hero__column">
+				<div class="sub-hero__line-item">
 					<div class="sub-hero__icon">
-						<i class="fa fa-cog" aria-hidden="true"></i><h3>Best of the best</h3>
+						<i class="fa fa-check-square-o" aria-hidden="true"></i><p>Burglars prefer to operate when no one is home. 71% of break-ins occur when the home is unoccupied.</p>
 					</div>
-					<div class="sub-hero__text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+				</div>
+				<div class="sub-hero__line-item">
+					<div class="sub-hero__icon">
+						<i class="fa fa-check-square-o" aria-hidden="true"></i><p>Homeowners can protect against burglary by using preventative and/or detection methods. The only detection method is an alarm system. Most burglars claim they avoid breaking into "advertised" alarm homes.</p>
+					</div>
+				</div>
+				<div class="sub-hero__line-item">
+					<div class="sub-hero__icon">
+						<i class="fa fa-check-square-o" aria-hidden="true"></i><p>In a study of why a burglary attempt was unsuccessful, 74.3% of the unsuccessful attempts were due to an alarm deterring the intruder.</p>
+					</div>
+				</div>
+				
+				
+				<div class="sub-hero__line-item">
+					<div class="sub-hero__icon">
+						<i class="fa fa-check-square-o" aria-hidden="true"></i><p>50% of victimized suburban homes will experience 2 or more burglaries. (US Department of Justice)</p>
+					</div>
+				</div>
+				<div class="sub-hero__line-item">
+					<div class="sub-hero__icon">
+						<i class="fa fa-check-square-o" aria-hidden="true"></i><p>55.6%of all break-ins occur between 6:00 a.m. and 6:00 p.m. (Bureau of Justice Statistics, Criminal Victimization in the US, US Department of Justice)</p>
 					</div>
 				</div>
 			</div>
