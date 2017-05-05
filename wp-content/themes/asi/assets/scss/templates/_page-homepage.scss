@@ -34,12 +34,30 @@
 }
 
 .overlay {
-	background-color: rgba(18, 15, 130, 0.85);
+	background-color: rgba(18, 15, 130, 0.75);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.homepage {
+
+	h3 {
+		font-size: 28px;
+		margin: 0;
+		text-transform: uppercase;
+		font-family: $font-alpha;
+		padding-bottom: 20px;
+		letter-spacing: 2px;
+	}
+
+	p {
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .hero {
@@ -97,26 +115,18 @@
 		padding: 100px 0;
 	}
 
+	h2 {
+		font-family: $font-beta;
+		font-size: 40px;
+	}
+
 	&__container {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 	}
 
-	h2 {
-		font-size: 60px;
-		line-height: 1.2;
-		margin: 0;
-		font-family: $font-beta;
-		font-weight: 800;
-		font-style: italic;
-	}
-
-	h3 {
-		font-size: 30px;
-		margin: 0;
-	}
-
+	
 	&__left {
 		width: 100%;
 		padding: 10px 0;
@@ -145,28 +155,15 @@
 
 
 .sub-hero {
-	padding: 40px 0;
-	background: url(../img/6.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	position: relative;
-	color: white;
+	padding: 80px 0;
+	background-color: $color-beta;
 
 	@include breakpoint(800px) {
 		padding: 100px 0;
 	}
 
-	h2 {
-		font-size: 40px;
-		line-height: 1.2;
+	h3 {
 		padding-bottom: 40px;
-	}
-
-	p {
-		font-size: 16px;
-		margin: 0;
 	}
 
 
@@ -197,19 +194,33 @@
 		padding: 100px 0;
 	}
 
+	&__header {
+		padding-bottom: 60px;
+
+		h3 {
+			padding-bottom: 20px;	
+		}
+	}
+	
+
 	&__container {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
+
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+		}
 	}
 
 	&__left {
 		width: 100%;
 		text-align: center;
+		padding: 20px 0;
 
 		@include breakpoint(800px) {
 			width: 50%;
-			padding-right: 20px;
+			padding: 0 0 0 20px;
 			text-align: left;
 		}
 	}
@@ -217,10 +228,11 @@
 	&__right {
 		width: 100%;
 		text-align: center;
+		padding: 20px 0;
 
 		@include breakpoint(800px) {
 			width: 50%;
-			padding-right: 20px;
+			padding: 0 20px 0 0;
 			text-align: right;
 		}
 	}
@@ -228,16 +240,18 @@
 
 .contact {
 	padding: 40px 0;
-	background: url(../img/3.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	position: relative;
-	color: white;
+	background-color: $color-beta;
 
 	@include breakpoint(800px) {
 		padding: 100px 0;
+	}
+
+	&__header {
+		padding-bottom: 60px;
+
+		h3 {
+			padding-bottom: 20px;	
+		}
 	}
 
 	input,
@@ -246,17 +260,31 @@
 		padding: 8px;
 		outline: 0;
 		border: 0;
+		margin-top: 5px;
+	}
+
+	p {
+		padding-bottom: 20px;
+	}
+
+	label {
+		font-size: 14px;
 	}
 
 	input[type='submit'] {
 		background-color: $color-alpha;
+		border: 2px solid $color-alpha;
 		color: $white;
-		border: 2px solid $white;
+		padding: 8px 42px;
+		transition: all 600ms ease;
+		text-transform: uppercase;
+		display: inline-block;
+    	width: auto;
 
 		&:hover {
-			background-color: $white;
 			border-color: $color-alpha;
 			color: $color-alpha;
+			background-color: transparent;
 		}
 	}
 

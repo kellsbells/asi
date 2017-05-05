@@ -39,7 +39,7 @@ get_header();
 		<div class="container">
 			<div class="about__container">
 				<div class="about__left js-inview appear">
-					<h2>We are ASI</h2>
+					<h2>We are Alert Security Inc.</h2>
 					<h3>Your local resource for alert security.</h3>
 					<p>Protect what you love most. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus auctor cursus. Aliquam sed rhoncus sem. Suspendisse ullamcorper elit magna, in hendrerit lorem egestas semper. Donec justo sapien, imperdiet feugiat hendrerit sit amet, tincidunt vel risus. Pellentesque luctus ornare tincidunt. Aenean egestas ante et sem posuere, quis posuere elit condimentum.</p>
 				</div>
@@ -52,10 +52,9 @@ get_header();
 
 
 	<section class="sub-hero">
-		<div class="overlay"></div>
 		<div class="container">
 			<div class="sub-hero__heading">
-				<h2 class="js-inview appear">Why a Home Security System is a Necessity</h2>
+				<h3 class="js-inview appear">Why a Home Security System is a Necessity</h3>
 			</div>
 
 			<div class="sub-hero__columns js-inview appear">
@@ -102,33 +101,52 @@ get_header();
 	</section>
 	<section class="products" id="products">
 		<div class="container">
+
+			<div class="products__header">
+				<h3 class="js-inview appear">The Products We Use</h3>
+				<p class="js-inview appear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+			</div>	
+
 			<div class="products__container">
 				<div class="products__left">
 					<img src="<?php echo $imagedir ?>/products/keypad.png" class="js-inview slide-right">
 				</div>
-
 				<div class="products__right js-inview appear">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
 				</div>
-			</div>	
-		</div>
-	</section>
-	<section class="products">
-		<div class="container">
+			</div>
 			<div class="products__container">
 				<div class="products__left js-inview appear">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
-				</div>
-
-				<div class="products__right">
 					<img src="<?php echo $imagedir ?>/products/honeywell-l7000.jpg" class="js-inview slide-left">
 				</div>
+				<div class="products__right">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+				</div>
 			</div>	
+			<div class="products__container">
+				<div class="products__left">
+					<img src="<?php echo $imagedir ?>/products/keypad.png" class="js-inview slide-right">
+				</div>
+				<div class="products__right js-inview appear">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+				</div>
+			</div>
+			<div class="products__container">
+				<div class="products__left js-inview appear">
+					<img src="<?php echo $imagedir ?>/products/honeywell-l7000.jpg" class="js-inview slide-left">
+				</div>
+				<div class="products__right">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+				</div>
+			</div>		
 		</div>
 	</section>
 	<section class="contact" id="contact">
-		<div class="overlay"></div>
 		<div class="container">
+			<div class="contact__header">
+				<h3 class="js-inview appear">Contact Us</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+			</div>	
 			<div class="contact__container">
 				<div class="contact__form js-inview appear">
 					<?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>

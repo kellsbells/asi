@@ -629,13 +629,15 @@ big {
     padding: 0; }
   .header-desktop li {
     list-style: none;
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
     display: inline-block; }
     .header-desktop li a {
       -webkit-transition: 0.2s;
       position: relative;
-      padding: 8px 20px; }
+      padding: 8px 10px;
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 2px; }
       .header-desktop li a:after {
         content: '';
         position: absolute;
@@ -744,6 +746,13 @@ big {
       padding: 0;
       margin: 0; }
 
+.site-footer {
+  background: #120F82;
+  color: #FFF; }
+  .site-footer a {
+    color: #FFF;
+    float: right; }
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -795,12 +804,25 @@ big {
   margin: 0 auto; }
 
 .overlay {
-  background-color: rgba(18, 15, 130, 0.85);
+  background-color: rgba(18, 15, 130, 0.75);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
+
+.homepage h3 {
+  font-size: 28px;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 20px;
+  letter-spacing: 2px; }
+
+.homepage p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
 
 .hero {
   background: url(../img/5.jpg) no-repeat center center fixed;
@@ -836,20 +858,13 @@ big {
   @media (min-width: 800px) {
     .about {
       padding: 100px 0; } }
+  .about h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px; }
   .about__container {
     display: flex;
     align-items: center;
     flex-wrap: wrap; }
-  .about h2 {
-    font-size: 60px;
-    line-height: 1.2;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    font-style: italic; }
-  .about h3 {
-    font-size: 30px;
-    margin: 0; }
   .about__left {
     width: 100%;
     padding: 10px 0; }
@@ -868,21 +883,13 @@ big {
       width: 100%; }
 
 .sub-hero {
-  padding: 40px 0;
-  background: url(../img/6.jpg) no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
-  color: white; }
+  padding: 80px 0;
+  background-color: #F2F1F3; }
   @media (min-width: 800px) {
     .sub-hero {
       padding: 100px 0; } }
-  .sub-hero h2 {
-    font-size: 40px;
-    line-height: 1.2;
+  .sub-hero h3 {
     padding-bottom: 40px; }
-  .sub-hero p {
-    font-size: 16px;
-    margin: 0; }
   .sub-hero i {
     font-size: 30px;
     padding-right: 10px; }
@@ -900,47 +907,66 @@ big {
   @media (min-width: 800px) {
     .products {
       padding: 100px 0; } }
+  .products__header {
+    padding-bottom: 60px; }
+    .products__header h3 {
+      padding-bottom: 20px; }
   .products__container {
     display: flex;
     align-items: center;
     flex-wrap: wrap; }
+    .products__container:nth-child(odd) {
+      flex-direction: row-reverse; }
   .products__left {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 20px 0; }
     @media (min-width: 800px) {
       .products__left {
         width: 50%;
-        padding-right: 20px;
+        padding: 0 0 0 20px;
         text-align: left; } }
   .products__right {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 20px 0; }
     @media (min-width: 800px) {
       .products__right {
         width: 50%;
-        padding-right: 20px;
+        padding: 0 20px 0 0;
         text-align: right; } }
 
 .contact {
   padding: 40px 0;
-  background: url(../img/3.jpg) no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
-  color: white; }
+  background-color: #F2F1F3; }
   @media (min-width: 800px) {
     .contact {
       padding: 100px 0; } }
+  .contact__header {
+    padding-bottom: 60px; }
+    .contact__header h3 {
+      padding-bottom: 20px; }
   .contact input,
   .contact textarea {
     width: 100%;
     padding: 8px;
     outline: 0;
-    border: 0; }
+    border: 0;
+    margin-top: 5px; }
+  .contact p {
+    padding-bottom: 20px; }
+  .contact label {
+    font-size: 14px; }
   .contact input[type='submit'] {
     background-color: #120F82;
+    border: 2px solid #120F82;
     color: #FFF;
-    border: 2px solid #FFF; }
+    padding: 8px 42px;
+    transition: all 600ms ease;
+    text-transform: uppercase;
+    display: inline-block;
+    width: auto; }
     .contact input[type='submit']:hover {
-      background-color: #FFF;
       border-color: #120F82;
-      color: #120F82; }
+      color: #120F82;
+      background-color: transparent; }

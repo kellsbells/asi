@@ -43,21 +43,21 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 			</div>
 		</div>
 		<div class="header__container">
-			<a href="/#" class="site-branding nav-item">
+			<a href="<?php echo home_url(); ?>" class="site-branding nav-item">
 				<img class="desktop-logo" src="<?php echo $imagedir ?>/asi-logo-dark.png"/>
 			</a>
 			<nav id="site-navigation" class="nav-item" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav>
 			<div class="site-action nav-item">
-				<a class="button" href="/#contact">Contact Us</a>
+				<a class="button" href="#contact">Contact Us</a>
 			</div>
 		</div>
 	</header>
 
 	<header id="header" class="header-mobile" role="banner">
 		<div class="fixed-nav">
-			<a href="/#" class="site-branding nav-item">
+			<a href="<?php echo home_url(); ?>" class="site-branding nav-item">
 				<img class="desktop-logo" src="<?php echo $imagedir ?>/asi-logo-dark.png"/>
 			</a>
 			<div class="hamburger-helper">
@@ -81,7 +81,7 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav>
 				<div class="site-action nav-item">
-					<a class="button" href="/#contact">Contact Us</a>
+					<a class="button" href="#contact">Contact Us</a>
 				</div>
 			</div>
 		</div>
