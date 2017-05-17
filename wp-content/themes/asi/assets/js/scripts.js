@@ -14,8 +14,8 @@
 			/**
 			 * Set the initial breakpoint context
 			 */
-			Site.challengeElement = document.querySelector( '.breakpoint-context' );
-			Site.challengeContext();
+			//Site.challengeElement = document.querySelector( '.breakpoint-context' );
+			//Site.challengeContext();
 			Site.waypoints();
 			Site.rotateWords();
 			Site.smoothScroll();
@@ -111,6 +111,11 @@
 			$('.hamburger-helper').on('click', function() {
 				$(this).find('.hamburger').toggleClass('active');
 				$('.dropdown').toggleClass('active');
+			});
+
+			$('.dropdown a').on('click', function() {
+				$('.dropdown').removeClass('active');
+				$('.hamburger').removeClass('active');
 			});
 		},
 	};
