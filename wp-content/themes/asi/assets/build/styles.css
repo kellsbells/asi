@@ -1060,9 +1060,6 @@ big {
   background-size: cover;
   position: relative;
   min-height: 70vh; }
-  @media (min-width: 800px) {
-    .hero {
-      min-height: 100vh; } }
   .hero__container {
     display: flex;
     align-items: flex-end;

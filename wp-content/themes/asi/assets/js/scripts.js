@@ -65,24 +65,26 @@
 		},
 
 		rotateWords: function(){
-			$(function () {
-			  	var $anchors = $('.js-rotating-words');
-				var counter = 0;
-				var timer = setInterval(function () {
-				    if (counter < $anchors.length) {
-				    	$anchors.removeClass('active');
-				        $($anchors[counter]).addClass('active');
-				    }
-				    if (counter >= $anchors.length) {
-				        clearInterval(timer);
-				    }
-				    counter++;
-				}, 800);
-			});
+			$('.js-rotating-words').waypoint(function() {
+				$(function () {
+				  	var $anchors = $('.js-rotating-words');
+					var counter = 0;
+					var timer = setInterval(function () {
+					    if (counter < $anchors.length) {
+					    	$anchors.removeClass('active');
+					        $($anchors[counter]).addClass('active');
+					    }
+					    if (counter >= $anchors.length) {
+					        clearInterval(timer);
+					    }
+					    counter++;
+					}, 800);
+				});
+			},
+		    { offset: '80%'});	
 		},
 
 		mobileNav: function(){
-			console.log('in mobile nav');
 			$('.hamburger-helper').on('click', function() {
 				$(this).find('.hamburger').toggleClass('active');
 				$('.dropdown').toggleClass('active');

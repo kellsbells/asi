@@ -70,10 +70,6 @@
 	position: relative;
 	min-height: 70vh;
 
-	@include breakpoint(800px) {
-		min-height: 100vh;
-	}
-
 
 	&__container {
 		display: flex;
