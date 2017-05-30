@@ -37,9 +37,15 @@ $imagedir = get_stylesheet_directory_uri() . "/assets/img";
 	<header id="header" class="header-desktop" role="banner">
 		<div class="utility-nav">
 			<div class="container">
-				<div class="utility-nav__item">
-					<a href="tel:8001231234"><i class="fa fa-phone" aria-hidden="true"></i>800-123-1234</a>
+				<div class="utility-nav__item left"><p>Licensed-Bonded-Insured</p></div>
+				<div class="utility-nav__item left"><p>CONTR# ALERTSI980B4</p></div> 
+				<div class="utility-nav__item right">
+					<a href="tel:4252713542">(425) 271-3542</a>
+				</div>	
+				<div class="utility-nav__item right">
+					<a href="tel:8004601150"><i class="fa fa-phone" aria-hidden="true"></i>(800) 460-1150</a>
 				</div>
+					
 			</div>
 		</div>
 		<div class="header__container">

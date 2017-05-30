@@ -3,6 +3,7 @@
 //--------------------------------------------------------------
 
 
+
 .js-inview {
 	opacity: 0;
 	transition: all 1000ms ease;
@@ -102,14 +103,6 @@
 			display: block;
 		}
 	}
-
-	.js-rotating-words {
-		display: none;
-
-		&.active {
-			display: block;
-		}
-	}
 }
 
 
@@ -120,9 +113,15 @@
 		padding: 100px 0;
 	}
 
-	h2 {
-		font-family: $font-beta;
-		font-size: 40px;
+	.js-rotating-words {
+		display: none;
+		opacity: 0;
+		transition: all 300ms ease;
+
+		&.active {
+			display: inline;
+			opacity: 1;
+		}
 	}
 
 	&__container {
@@ -131,13 +130,29 @@
 		flex-wrap: wrap;
 	}
 
+	&__intro {
+		text-align: center;
+		padding-bottom: 20px;
+
+		h1 {
+			text-transform: uppercase;
+			color: $color-charlie;
+			font-size: 40px;
+			padding-bottom: 20px;
+		}
+
+		h3 {
+			display: inline;
+		}
+	}
+
 	
 	&__left {
 		width: 100%;
 		padding: 10px 0;
 
 		@include breakpoint(800px) {
-			width: 50%;
+			width: 70%;
 			padding-right: 20px;
 		}
 	}
@@ -147,12 +162,25 @@
 		padding: 10px 0;
 
 		@include breakpoint(800px) {
-			width: 50%;
+			width: 30%;
 			padding-left: 20px;
 		}
 
 		img {
 			width: 100%;
+		}
+	}
+
+	&__cta {
+		padding-top: 40px;
+		text-align: center;
+
+		h3 {
+			padding-bottom: 20px;
+
+			span {
+				color: $color-charlie;
+			}
 		}
 	}
 	
@@ -194,14 +222,14 @@
 
 
 .customers {
-	padding: 40px 0;
+	padding: 40px 0 100px;
 
 	@include breakpoint(800px) {
 		padding: 100px 0;
 	}
 
 	&__header {
-		padding-bottom: 60px;
+		padding-bottom: 20px;
 
 		h3 {
 			padding-bottom: 20px;	
@@ -209,15 +237,15 @@
 	}
 
 	&__testimonials {
+		padding-bottom: 40px;
 
-		.slick-track {
-			padding-bottom: 20px;
-		}
 		.slick-dots {
 			li {
 				background-color: $color-charlie;
 				transition: all 600ms ease;
 				border-radius: 100%;
+				height: 15px;
+				width: 15px;
 
 				&.slick-active {
 					background-color: $color-alpha;
@@ -237,7 +265,7 @@
 	}
 
 	&__logos {
-		padding: 40px 0;
+		padding: 0 0 40px 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -245,6 +273,7 @@
 
 	&__logo {
 		width: 20%;
+		max-width: 150px;
 		padding: 2%;
 	}
 }	
@@ -252,7 +281,7 @@
 
 
 .services {
-	padding: 40px 0;
+	padding: 40px 0 30px;
 	background-color: $color-beta;
 
 	@include breakpoint(800px) {
@@ -288,6 +317,11 @@
 			font-size: 16px;
 			padding: 0 10px;
 		}
+	}
+
+	&__cta {
+		text-align: center;
+		padding-top: 10px;
 	}
 }
 
@@ -376,8 +410,8 @@
 	}
 
 	input[type='submit'] {
-		background-color: $color-alpha;
-		border: 2px solid $color-alpha;
+		background-color: $color-charlie;
+		border: 2px solid $color-charlie;
 		color: $white;
 		padding: 8px 42px;
 		transition: all 600ms ease;

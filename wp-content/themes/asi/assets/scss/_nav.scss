@@ -27,12 +27,39 @@
 		padding: 10px 0;
 
 		&__item {
-			float: right;
+			display: inline-block;
+			color: $white;
+			padding: 0 10px;
+
+			&.right {
+				float: right;
+			}
+
+			&.left {
+				float: left;
+			}
+
+			p {
+				margin: 0;
+				font-family: $font-alpha;
+				vertical-align: top;
+				list-height: 1;
+				font-size: 14px;
+			}
 			
 			a {
 				color: $white;
+				list-height: 1;
+				vertical-align: top;
 				text-decoration: none;
 				font-family: $font-alpha;
+
+				&:hover {
+					color: $color-charlie;
+					i {
+						color: $white;
+					}
+				}
 			}
 		}
 
@@ -104,8 +131,8 @@
 	.site-action {
 
 		a {
-			background-color: $color-alpha;
-			border: 2px solid $color-alpha;
+			background-color: $color-charlie;
+			border: 2px solid $color-charlie;
 			color: $white;
 			padding: 8px 12px;
 			transition: all 600ms ease;

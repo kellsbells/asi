@@ -19,35 +19,41 @@ get_header();
 				<div class="hero__left">
 					<img src="<?php echo $imagedir ?>/asi-logo.png">
 				</div>
-				<div class="hero__right">
-					<h1 class="js-rotating-words">Delivers</h1>
-					<h1 class="js-rotating-words">Protects</h1>
-					<h1 class="js-rotating-words">Rises above</h1>
-					<h1 class="js-rotating-words">Reliability</h1>
-					<h1 class="js-rotating-words">Local Response</h1>
-					<h1 class="js-rotating-words">Professional Disgretion</h1>
-					<h1 class="js-rotating-words">Protects homes and businesses</h1>
-					<h1 class="js-rotating-words">For all your security needs</h1>
-					<h1 class="js-rotating-words">Security for a changing world</h1>
-					<h1 class="js-rotating-words">Your source for security</h1>
-					<h1 class="js-rotating-words">Residential &amp; Commercial Security Systems</h1>
-				</div>
 			</div>	
 		</section>	
 	</section>
 
 	<section class="about" id="about">
 		<div class="container">
+			<div class="about__intro">
+				<h1 class="js-inview appear">We are Alert Security Inc.</h1>
+				<div class="js-inview appear">
+					<h3>We </h3>
+					<h3 class="js-rotating-words active">Deliver</h3>
+					<h3 class="js-rotating-words">Protect</h3>
+					<h3 class="js-rotating-words">Rise Above</h3>
+					<h3 class="js-rotating-words">Are Your Local Response</h3>
+					<h3 class="js-rotating-words">Provide Professional Disgretion</h3>
+					<h3 class="js-rotating-words">Protect homes and businesses</h3>
+					<h3 class="js-rotating-words">Are security for a changing world</h3>
+					<h3 class="js-rotating-words">Are your source for security</h3>
+					<h3 class="js-rotating-words">Are your source for local Residential &amp; Commercial Security Systems</h3>
+				</div>
+			</div>
 			<div class="about__container">
 				<div class="about__left js-inview appear">
-					<h2>We are Alert Security Inc.</h2>
-					<h3>Your local resource for Residential &amp; Commercial Security Systems.</h3>
 					<p>Protect what you love most. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus auctor cursus. Aliquam sed rhoncus sem. Suspendisse ullamcorper elit magna, in hendrerit lorem egestas semper. Donec justo sapien, imperdiet feugiat hendrerit sit amet, tincidunt vel risus. Pellentesque luctus ornare tincidunt. Aenean egestas ante et sem posuere, quis posuere elit condimentum.</p>
 				</div>
 				<div class="about__right js-inview appear">
 					<img src="<?php echo $imagedir ?>/1.jpg">
 				</div>
-			</div>	
+			</div>
+
+			<div class="about__cta js-inview appear">
+				<h3>Contact us for a <span>FREE</span> Custom Security Review Today</h3>
+				<a class="button" href="#contact">Contact Us</a>
+			</div>
+
 		</div>	
 	</section>
 
@@ -108,7 +114,16 @@ get_header();
 				<p class="js-inview appear">Alert Security Inc. has partnered with Alarm Center Inc., a 24-hour state of the art UL listed local monitoring center that has provided monitoring for over 30 years because we believe in answering the phone with a “live” voice rather than an automated attendant. Because we believe in quality, we use Honeywell security products for the most trusted systems available.</p>
 			</div>	
 
-			<div class="customers__testimonials js-testimonials">
+			<div class="customers__logos">
+				<div class="customers__logo js-inview appear">
+					<img src="<?php echo $imagedir ?>/bbb-logo.png" alt="A+ Rating Better Business Bureau">
+				</div>
+				<div class="customers__logo js-inview appear">
+					<img src="<?php echo $imagedir ?>/angies-list.png" alt="Angie's List">
+				</div>
+			</div>
+
+			<div class="customers__testimonials js-inview appear js-testimonials">
 				<div class="customers__testimonial">
 					<blockquote>
 						"I'd be lost without Alert Security Inc.."
@@ -134,14 +149,7 @@ get_header();
 					<cite>- Thebault E.</cite>
 				</div>
 			</div>	
-			<div class="customers__logos">
-				<div class="customers__logo">
-					<img src="<?php echo $imagedir ?>/bbb-logo.png" alt="A+ Rating Better Business Bureau">
-				</div>
-				<div class="customers__logo">
-					<img src="<?php echo $imagedir ?>/angies-list.png" alt="Angie's List">
-				</div>
-			</div>
+			
 		</div>
 	</section>
 	<section class="services" id="services">
@@ -172,7 +180,11 @@ get_header();
 					<i class="fa fa-fire" aria-hidden="true"></i>
 					<h6>Residential Smoke Detection</h6>
 				</div>
-			</div>	
+			</div>
+			
+			<div class="services__cta">
+				<a class="button" href="#contact">Find Out More</a>	
+			</div>
 		</div>
 	</section>
 	<section class="products" id="products">
@@ -188,34 +200,40 @@ get_header();
 					<img src="<?php echo $imagedir ?>/products/keypad.png" class="js-inview slide-right">
 				</div>
 				<div class="products__right js-inview appear">
+					<h3>Keypad</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
 				</div>
 			</div>
 			<div class="products__container">
 				<div class="products__left js-inview appear">
-					<img src="<?php echo $imagedir ?>/products/honeywell-l7000.jpg" class="js-inview slide-left">
+					<img src="<?php echo $imagedir ?>/products/remote-control-2.jpg" class="js-inview slide-left">
 				</div>
 				<div class="products__right">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+					<h3>Wireless Keys</h3>
+					<p>Control your security system with the touch of a button in or around your home.</p>
 				</div>
 			</div>	
 			<div class="products__container">
 				<div class="products__left">
-					<img src="<?php echo $imagedir ?>/products/keypad.png" class="js-inview slide-right">
+					<img src="<?php echo $imagedir ?>/products/alarm-communicator.jpg" class="js-inview slide-right">
 				</div>
 				<div class="products__right js-inview appear">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+					<h3>Internet and Digital Cellular Alarm Communicator</h3>
+					<p>Control your security system from any wireless handheld device...anywhere in the world!</p>
 				</div>
-			</div>
+			</div>	
 			<div class="products__container">
 				<div class="products__left js-inview appear">
-					<img src="<?php echo $imagedir ?>/products/honeywell-l7000.jpg" class="js-inview slide-left">
+					<img src="<?php echo $imagedir ?>/products/smoke-detector.jpg" class="js-inview slide-left">
 				</div>
 				<div class="products__right">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+					<h3>Smoke Detector</h3>
+					<p>System Sensor i3TM series smoke detectors represent significant advancement in conventional detection. The i3 family is founded on three principles: installation ease, intelligence, and instant inspection.</p>
 				</div>
-			</div>		
+			</div>
 		</div>
+
+		
 	</section>
 	<section class="contact" id="contact">
 		<div class="container">
