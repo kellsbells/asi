@@ -192,6 +192,105 @@
 	}
 }
 
+
+.customers {
+	padding: 40px 0;
+
+	@include breakpoint(800px) {
+		padding: 100px 0;
+	}
+
+	&__header {
+		padding-bottom: 60px;
+
+		h3 {
+			padding-bottom: 20px;	
+		}
+	}
+
+	&__testimonials {
+
+		.slick-track {
+			padding-bottom: 20px;
+		}
+		.slick-dots {
+			li {
+				background-color: $color-charlie;
+				transition: all 600ms ease;
+				border-radius: 100%;
+
+				&.slick-active {
+					background-color: $color-alpha;
+				}
+
+				button {
+					&:before {
+						color: transparent;
+					}
+				}
+			}
+		}
+	}
+
+	&__testimonial {
+		text-align: center;
+	}
+
+	&__logos {
+		padding: 40px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__logo {
+		width: 20%;
+		padding: 2%;
+	}
+}	
+
+
+
+.services {
+	padding: 40px 0;
+	background-color: $color-beta;
+
+	@include breakpoint(800px) {
+		padding: 100px 0;
+	}
+
+	&__header {
+		padding-bottom: 60px;
+
+		h3 {
+			padding-bottom: 20px;	
+		}
+	}
+	
+
+	&__icons {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+	}
+
+	&__icon {
+		width: 20%;
+		text-align: center;
+		padding-bottom: 15px;
+
+		i {
+			font-size: 80px;
+			color: $color-charlie;
+		}
+
+		h6 {
+			font-size: 16px;
+			padding: 0 10px;
+		}
+	}
+}
+
 .products {
 	padding: 40px 0;
 

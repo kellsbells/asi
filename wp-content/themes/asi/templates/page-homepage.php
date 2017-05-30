@@ -30,6 +30,7 @@ get_header();
 					<h1 class="js-rotating-words">For all your security needs</h1>
 					<h1 class="js-rotating-words">Security for a changing world</h1>
 					<h1 class="js-rotating-words">Your source for security</h1>
+					<h1 class="js-rotating-words">Residential &amp; Commercial Security Systems</h1>
 				</div>
 			</div>	
 		</section>	
@@ -40,7 +41,7 @@ get_header();
 			<div class="about__container">
 				<div class="about__left js-inview appear">
 					<h2>We are Alert Security Inc.</h2>
-					<h3>Your local resource for alert security.</h3>
+					<h3>Your local resource for Residential &amp; Commercial Security Systems.</h3>
 					<p>Protect what you love most. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus auctor cursus. Aliquam sed rhoncus sem. Suspendisse ullamcorper elit magna, in hendrerit lorem egestas semper. Donec justo sapien, imperdiet feugiat hendrerit sit amet, tincidunt vel risus. Pellentesque luctus ornare tincidunt. Aenean egestas ante et sem posuere, quis posuere elit condimentum.</p>
 				</div>
 				<div class="about__right js-inview appear">
@@ -99,12 +100,87 @@ get_header();
 
 		</div>
 	</section>
+	<section class="customers" id="customers">
+		<div class="container">
+
+			<div class="customers__header">
+				<h3 class="js-inview appear">What Our Customers Say About Us</h3>
+				<p class="js-inview appear">Alert Security Inc. has partnered with Alarm Center Inc., a 24-hour state of the art UL listed local monitoring center that has provided monitoring for over 30 years because we believe in answering the phone with a “live” voice rather than an automated attendant. Because we believe in quality, we use Honeywell security products for the most trusted systems available.</p>
+			</div>	
+
+			<div class="customers__testimonials js-testimonials">
+				<div class="customers__testimonial">
+					<blockquote>
+						"I'd be lost without Alert Security Inc.."
+					</blockquote>
+					<cite>- Cassy K.</cite>
+				</div>
+				<div class="customers__testimonial">
+					<blockquote>
+						"Fantastic, I'm totally blown away by Alert Security Inc.."
+					</blockquote>
+					<cite>- Jack F.</cite>
+				</div>
+				<div class="customers__testimonial">
+					<blockquote>
+						"The very best. Alert Security Inc. is awesome!"
+					</blockquote>
+					<cite>- Way O.</cite>
+				</div>
+				<div class="customers__testimonial">
+					<blockquote>
+						"Keep up the excellent work. You won't regret it. Alert Security Inc. impressed me on multiple levels. I will recommend you to my neighbors."
+					</blockquote>
+					<cite>- Thebault E.</cite>
+				</div>
+			</div>	
+			<div class="customers__logos">
+				<div class="customers__logo">
+					<img src="<?php echo $imagedir ?>/bbb-logo.png" alt="A+ Rating Better Business Bureau">
+				</div>
+				<div class="customers__logo">
+					<img src="<?php echo $imagedir ?>/angies-list.png" alt="Angie's List">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services" id="services">
+		<div class="container">
+
+			<div class="services__header">
+				<h3 class="js-inview appear">The Services we Provide</h3>
+			</div>	
+
+			<div class="services__icons">
+				<div class="services__icon js-inview appear">
+					<i class="fa fa-building" aria-hidden="true"></i>
+					<h6>Commercial Security</h6>
+				</div>
+				<div class="services__icon js-inview appear">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<h6>Residential Security</h6>
+				</div>
+				<div class="services__icon js-inview appear">
+					<i class="fa fa-road" aria-hidden="true"></i>
+					<h6>New Construction &amp; Pre-Wire</h6>
+				</div>
+				<div class="services__icon js-inview appear">
+					<i class="fa fa-id-card" aria-hidden="true"></i>
+					<h6>Commercial Card Access</h6>
+				</div>
+				<div class="services__icon js-inview appear">
+					<i class="fa fa-fire" aria-hidden="true"></i>
+					<h6>Residential Smoke Detection</h6>
+				</div>
+			</div>	
+		</div>
+	</section>
 	<section class="products" id="products">
 		<div class="container">
 
 			<div class="products__header">
 				<h3 class="js-inview appear">The Products We Use</h3>
-				<p class="js-inview appear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in mauris eu purus facilisis eleifend at nec nisi. Cras volutpat tortor tempor tortor vestibulum condimentum.</p>
+				<p class="js-inview appear">Alert Security Inc. has partnered with Alarm Center Inc., a 24-hour state of the art UL listed local monitoring center that has provided monitoring for over 30 years because we believe in answering the phone with a “live” voice rather than an automated attendant. Because we believe in quality, we use Honeywell security products for the most trusted systems available.</p>
 			</div>	
 
 			<div class="products__container">
